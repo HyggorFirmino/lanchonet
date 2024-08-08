@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Button, Card, CardBody, CardTitle, Form } from 'react-bootstrap';
+import { Button, Card, CardBody, CardTitle, Col, Form, Row } from 'react-bootstrap';
 
 
 interface LoginPageProps {
@@ -22,34 +22,40 @@ const LoginPage: React.FC<LoginPageProps> = () => {
   return (
     <>
       <Card
-        style={{ color:"#ffffff", backgroundColor: "#db8e16", marginBottom: "50px" }}
+        style={{ color:"#ffffff", backgroundColor: "#db8e16", marginBottom: "50px",height:"50vh", width: "70vw" }}
         className="mx-auto mt-5"
       >
         <CardTitle className="mb-4">Login</CardTitle>
-        <CardBody>
+        <CardBody style={{ backgroundColor: "rgba(0, 0, 0, 0.2)", backdropFilter: "blur(5px)" }}> 
           <Form onSubmit={handleSubmit}>
-            <Form.Group controlId="username" className="mb-4">
-              <Form.Label lg>Email: </Form.Label>
-              <Form.Control
-                type="text"
-                value={username}
-                onChange={(event: React.ChangeEvent<HTMLInputElement>) =>
-                  setUsername(event.target.value)
-                }
-              />
+            <Form.Group as={Row} controlId="username" className="mb-4">
+              <Form.Label column lg>Email: </Form.Label>
+              <Col>
+                <Form.Control
+                  type="text"
+                  value={username}
+                  onChange={(event: React.ChangeEvent<HTMLInputElement>) =>
+                    setUsername(event.target.value)
+                  }
+                />
+              </Col>
             </Form.Group>
-            <Form.Group controlId="password" className="mb-4">
-              <Form.Label>Senha: </Form.Label>
-              <Form.Control
-                type="password"
-                value={password}
-                onChange={(event: React.ChangeEvent<HTMLInputElement>) =>
-                  setPassword(event.target.value)
-                }
-              />
+            <Form.Group as={Row} controlId="password" className="mb-4">
+              <Form.Label column>Senha: </Form.Label>
+              <Col>
+                <Form.Control
+                  style={{width: "35vw"}}
+                  type="password"
+                  value={password}
+
+                  onChange={(event: React.ChangeEvent<HTMLInputElement>) =>
+                    setPassword(event.target.value)
+                  }
+                />
+              </Col>
             </Form.Group>
             {error && <p style={{ color: 'red' }}>{error}</p>}
-            <Button type="submit" style={{backgroundColor: "rgba(66, 34, 11, 0.6)"}}>
+            <Button type="submit" style={{backgroundColor: "rgba(66, 34, 11, 0.6)", width: "100%"}}>
               Login
             </Button>
           </Form>

@@ -1,5 +1,5 @@
 import './App.css'
-import LoginPage from './login'
+import Login from './login'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
@@ -7,7 +7,8 @@ function App() {
 
   return (
     <>
-      <LoginPage/>
+      <Login/>
+      
     </>
   )
 }

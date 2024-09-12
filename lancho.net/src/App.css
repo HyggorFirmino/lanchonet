@@ -1,10 +1,15 @@
+:root {
+  --primary-color: #FFB527;
+  --primary-color-darker: #FE6A00;
+  --secundary-color: #D9EE5F;
+  --white: rgb(255, 255, 255);
+}
 #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
 }
-
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -39,4 +44,13 @@
 
 .read-the-docs {
   color: #888;
+}
+
+/* app.css */
+
+
+body{
+  /* background-color: var(--primary-color)!important; */
+  background-image: url("./assets/imgs/lanche 219.jpg");
+  background-repeat: no-repeat ;
 }

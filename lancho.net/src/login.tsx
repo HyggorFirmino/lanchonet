@@ -17,8 +17,8 @@ function Login() {
       <Container>
         <Row className="mt-5 title">
           <Col xs={12}>
-            <h2 className="text-center">Criar conta ou Entrar</h2>
-            <p className="text-center">
+            <h1 className="text-center">Criar conta ou Entrar</h1>
+            <p className="text-center lead">
               Faça login ou crie sua conta abaixo
             </p>
           </Col>

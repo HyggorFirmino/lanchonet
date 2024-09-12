@@ -16,6 +16,7 @@ body {
 }
 
 .title {
+    border-radius: 10px;
     background-color: var(--primary-color-darker);
     color: var(--white);
     padding: 20px;
@@ -46,6 +47,7 @@ body {
 .section__form-button:hover {
     background-color: #FF9800;
 }
-.title h2{
+.title p, .cadastro  p, .login p{
 
+    font-weight: 600;
 }

@@ -1,0 +1,14 @@
+@import url("./App.css");
+
+body{
+    justify-content: left;
+}
+.card-bg{
+    background-color: var(--primary-color-darker);
+}
+.conect{
+    color: var(--white);
+}
+.best{
+    color: var(--primary-color-darker);
+}

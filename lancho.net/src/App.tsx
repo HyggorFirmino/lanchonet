@@ -1,5 +1,6 @@
 import './App.css'
 import Login from './login'
+import Home from './home'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
@@ -7,8 +8,9 @@ function App() {
 
   return (
     <>
-      <Login/>
       
+      <Home/>
+      {/* <Login/> */}
     </>
   )
 }

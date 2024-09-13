@@ -1,15 +1,15 @@
+@import url("./App.css");
 *,
 *::before,
 *::after {
     box-sizing: border-box;
 }
-
-:root {
-    --primary-color: #FFB527;
-    --primary-color-darker: #FE6A00;
-    --secundary-color: #D9EE5F;
-    --white: rgb(255, 255, 255);
-}
+/* #root {
+    max-width: 1280px;
+    margin: 0 auto; 
+    padding: 2rem;
+    text-align: center; 
+  } */
 
 body {
     background-color: var(--primary-color)!important;

@@ -1,0 +1,15 @@
+@import url("../App.css");
+.bg-blur {
+    backdrop-filter: blur(10px);
+    /* background-color: rgba(255, 255, 255, 0.5); */
+    color: #fff;
+  }
+  
+  .bg-blur a {
+    color: #fff;
+  }
+  
+  .bg-blur a:hover {
+    color: #fff;
+  }
+  

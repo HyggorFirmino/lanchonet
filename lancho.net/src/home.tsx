@@ -1,4 +1,5 @@
-import { Card, CardImg, Col, Container, Row } from 'react-bootstrap'
+
+import { Card, CardBody, CardImg, Col, Container, Row, Image } from 'react-bootstrap'
 import './home.css'
 function Home(){
 
@@ -9,28 +10,25 @@ function Home(){
                 <h1 className='best'>MELHORES LANCHES</h1>
             </Row>
             <Row>
-                <Col>
-                    
-                    <Card className='bg-warning'>
-
+                <Col xs={5} md={1}>
+                    <CardBody className='card-bg'>
                         <CardImg src="./assets/imgs/oferta.png"></CardImg>
-                    </Card>
-                    
+                    </CardBody>                  
                 </Col>
-                <Col>
-                    <Card>
-
-                    </Card>
+                <Col xs={5} md={1}>
+                    <CardBody className='card-bg'>
+                        <CardImg src="./assets/imgs/oferta.png"></CardImg>
+                    </CardBody>                  
                 </Col>
-                <Col>
-                    <Card>
-
-                    </Card>
+                <Col xs={5} md={1}>
+                    <CardBody className='card-bg'>
+                        <CardImg src="./assets/imgs/oferta.png"></CardImg>
+                    </CardBody>                  
                 </Col>
-                <Col>
-                    <Card>
-
-                    </Card>
+                <Col xs={5} md={1}>
+                    <CardBody className='card-bg'>
+                        <CardImg src="./assets/imgs/oferta.png"></CardImg>
+                    </CardBody>                  
                 </Col>
                 
             </Row>
